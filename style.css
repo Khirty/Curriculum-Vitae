@@ -1,0 +1,163 @@
+css
+
+/* General Page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dff3f7, #f5f9fa);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main CV Container */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 80, 100, 0.15);
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #2d7189, #549db7);
+    color: white;
+    padding: 45px 30px;
+}
+
+/* Profile Icon */
+.profile-picture {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 5px solid #ffffff;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    display: block;
+}
+
+/* Sections */
+section {
+    margin: 30px 45px;
+}
+
+h2 {
+    color: #2d7189;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #d9eef3;
+}
+
+section p {
+    color: #555;
+}
+
+/* Education Card */
+.card {
+    background: #f2fafc;
+    border-left: 5px solid #549db7;
+    padding: 18px 20px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #2d7189;
+    margin-bottom: 5px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: #e1f2f6;
+    color: #28677b;
+    padding: 9px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid #c4e4eb;
+    transition: 0.2s;
+}
+
+.skills span:hover {
+    background: #549db7;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Contact */
+.contact-card {
+    background: #f2fafc;
+    padding: 18px 20px;
+    border-radius: 8px;
+    border-left: 5px solid #549db7;
+}
+
+a {
+    color: #2d7189;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #edf7f9;
+    padding: 20px;
+    color: #66818a;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    .container {
+        margin: 15px;
+    }
+
+    section {
+        margin: 25px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .profile-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .profile-icon span {
+        font-size: 45px;
+    }
+}
